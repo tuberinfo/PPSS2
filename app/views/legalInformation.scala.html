@@ -1,0 +1,54 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Legal Information") {
+
+  
+
+
+	<title> Legal Information </title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+
+
+<div class="container">
+	<center>	<h1> Legal Information </h1> </center>
+	<div class=" col-md-3"> <a href="index.html" class="btn-block btn-primary btn-lg"> Overview </a></div>
+	<div class=" col-md-3"> <a href="newTodo.html" class="btn-block btn-primary btn-lg col-sm-3"> Create a new TODO </a></div>
+	<div class=" col-md-3"> <a href="todo.html" class="btn-block btn-primary btn-lg col-sm-3"> Edit TODO </a></div>
+  <div class=" col-md-3"> <a href="legalInformation.html" class="btn-block btn-primary btn-lg col-sm-3 active"> Legal Information</a></div>
+</div>
+
+<div class="container">
+  <div class="col-md-6">
+    <h2>Legal Information</h2>
+    <p>
+      This is a dummy ToDo-List-website.<br />
+      made by:<br />
+      Jonathan Bader, Gereon Dusella<br />
+      Programmierpraktikum Soziale Netzwerke SoSe 2016<br />
+      Fachgebiet Komplexe und Verteilte IT Systeme (CIT) TU Berlin
+    </p>
+  </div>
+</div>
+
+
+
+
+
+}
