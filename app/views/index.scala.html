@@ -1,88 +1,100 @@
-@*
- * This template takes a single argument, a String containing a
- * message to display.
- *@
-@(message: String)
+@(todos: List[Todo], todoForm: Form[Todo])
+@import helper._
+@import views.html.tags._
 
-@*
- * Call the `main` template with two arguments. The first
- * argument is a `String` with the title of the page, the second
- * argument is an `Html` object containing the body of the page.
- *@
 @main("Overview") {
 
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <div class="container">
-		<center>	<h1> Legal Information </h1> </center>
-		<div class=" col-md-3"> <a href="index.html" class="btn-block btn-primary btn-lg active"> Overview </a></div>
-		<div class=" col-md-3"> <a href="newTodo.html" class="btn-block btn-primary btn-lg col-sm-3"> Create a new TODO </a></div>
-		<div class=" col-md-3"> <a href="todo.html" class="btn-block btn-primary btn-lg col-sm-3"> Edit TODO </a></div>
-	  <div class=" col-md-3"> <a href="legalInformation.html" class="btn-block btn-primary btn-lg col-sm-3"> Legal Information</a></div>
-	</div>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <div class="container">
-  <h3> <i>Your TODOs</i></h3>
+	<center>
+		<h1>Legal Information</h1>
+	</center>
+	<div class=" col-md-3">
+		<a href="index.html" class="btn-block btn-primary btn-lg active">
+			Overview </a>
+	</div>
+	<div class=" col-md-3">
+		<a href="newTodo.html" class="btn-block btn-primary btn-lg col-sm-3">
+			Create a new TODO </a>
+	</div>
+	<div class=" col-md-3">
+		<a href="todo.html" class="btn-block btn-primary btn-lg col-sm-3">
+			Edit TODO </a>
+	</div>
+	<div class=" col-md-3">
+		<a href="legalInformation"
+			class="btn-block btn-primary btn-lg col-sm-3"> Legal Information</a>
+	</div>
+</div>
 
-  <table class="table table-striped">
-    <thead>
-      <tr>
-		<th>Content</th>
-        <th>Deadline</th>
-        <th>Progress</th>
-        <th>Edit/Delete</th>
+<div class="container">
+	<h3>
+		<i>Your TODOs</i>
+	</h3>
 
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Beispielseite mit dem Bootstrap Framework anlegen</td>
-        <td>30. April 2016 23:55</td>
-        <td>20%</td>
-        <td>
-          <button type="button" class="btn btn-default">
-            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="btn btn-default">
-            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-          </button>
-        </td>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Content</th>
+				<th>Deadline</th>
+				<th>Progress</th>
+				<th>Edit/Delete</th>
 
-      </tr>
-      <tr>
-        <td>TheGi Hausaufgaben erledigen</td>
-        <td>07. Mai 2016 23:55</td>
-        <td>35%</td>
-        <td>
-          <button type="button" class="btn btn-default">
-            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="btn btn-default">
-            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-          </button>
-        </td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Beispielseite mit dem Bootstrap Framework anlegen</td>
+				<td>30. April 2016 23:55</td>
+				<td>20%</td>
+				<td>
+					<button id="edit" type="button" class="btn btn-default">
+						<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+					</button>
+					<button type="button" class="btn btn-default">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</td>
 
-      </tr>
-      <tr>
-        <td>Essen gehen</td>
-        <td>25. April 2016 21:30</td>
-        <td>0%</td>
-        <td>
-          <button type="button" class="btn btn-default">
-            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-          </button>
-          <button type="button" class="btn btn-default">
-            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-          </button>
-        </td>
+			</tr>
+			<tr>
+				<td>TheGi Hausaufgaben erledigen</td>
+				<td>07. Mai 2016 23:55</td>
+				<td>35%</td>
+				<td>
+					<button type="button" class="btn btn-default">
+						<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+					</button>
+					<button type="button" class="btn btn-default">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</td>
 
-      </tr>
-    </tbody>
-  </table>
+			</tr>
+			<tr>
+				<td>Essen gehen</td>
+				<td>25. April 2016 21:30</td>
+				<td>0%</td>
+				<td>
+					<button type="button" class="btn btn-default">
+						<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+					</button>
+					<button type="button" class="btn btn-default">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</td>
+
+			</tr>
+		</tbody>
+	</table>
 </div>
 
 }

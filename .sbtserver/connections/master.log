@@ -1,8 +1,7 @@
-New log file opened at Thu May 05 13:04:38 CEST 2016 by 17571@gereon-ThinkPad-X250
-Taking next connection to: 40645
-Checking to see if clients are empty...
-No non-daemon clients connected after 3 min. Shutting down.
-Server socket thread exiting.
-0 clients open, will close them...
-All client sockets have been closed.
-Closing the 17571@gereon-ThinkPad-X250 logs at Thu May 05 13:07:38 CEST 2016, goodbye.
+New log file opened at Sat May 07 18:31:47 CEST 2016 by 30563@gereon-ThinkPad-X250
+Taking next connection to: 40335
+New client attempting to connect on port: 51740-40335
+  Address = /127.0.1.1:40335
+This client on port 51740 has uuid e1a416d2-a910-454f-92a0-e9656855f11e configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-e1a416d2-a910-454f-92a0-e9656855f11e
+Taking next connection to: 40335

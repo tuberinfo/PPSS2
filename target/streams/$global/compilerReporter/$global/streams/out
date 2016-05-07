@@ -1,0 +1,13 @@
+[0m[[31merror[0m] [0m/home/gereon/git/PPSS2/app/views/index.scala.html:8: object tags is not a member of package views.html[0m
+[0m[[31merror[0m] [0m<meta name="viewport" content="width=device-width, initial-scale=1">[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/gereon/git/PPSS2/app/views/index.scala.html:5: not found: value main[0m
+[0m[[31merror[0m] [0m@main("Overview") {[0m
+[0m[[31merror[0m] [0m ^[0m
+[0m[[31merror[0m] [0m/home/gereon/git/PPSS2/app/views/legalInformation.scala.html:15: not found: value main[0m
+[0m[[31merror[0m] [0m@main("Legal Information") {[0m
+[0m[[31merror[0m] [0m ^[0m
+[0m[[31merror[0m] [0m/home/gereon/git/PPSS2/app/views/newTodo.scala.html:3: not found: value main[0m
+[0m[[31merror[0m] [0m@main("Overview") {[0m
+[0m[[31merror[0m] [0m ^[0m
+[0m[[31merror[0m] [0mfour errors found[0m
