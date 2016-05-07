@@ -9,20 +9,22 @@ import java.util.Date;
 @Entity
 public class Todo extends Model {
     
+    private static final long serialVersionUID = 1L;
+    
     @Id
-    Long id;
+    public Long id;
     
     static Long idCount;
     
-    String description;
+    public String description;
     
-    int progress;
+    public String progress;
     
-    Date date;
+    public String date;
     
     
     
-    public Todo(String description, int progress, Date date) {
+    public Todo(String description, String progress, String date) {
         this.description=description;
         this.progress=progress;
         this.date=date;

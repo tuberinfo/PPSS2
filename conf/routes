@@ -15,3 +15,11 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 GET     /index.html                           controllers.HomeController.index
 
 GET     /legalInformation.html                controllers.HomeController.legalInformation
+
+GET     /newTodo.html                            controllers.HomeController.newTodo
+
+GET     /editTodo.html                         controllers.HomeController.editTodo 
+
+POST    /addTodo                                controllers.HomeController.addTodo
+
+GET     /products                               controllers.HomeController.getProducts    

@@ -6,8 +6,8 @@
 create table todo (
   id                            bigint not null,
   description                   varchar(255),
-  progress                      integer,
-  date                          timestamp,
+  progress                      varchar(255),
+  date                          varchar(255),
   constraint pk_todo primary key (id)
 );
 create sequence todo_seq;

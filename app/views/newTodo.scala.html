@@ -9,45 +9,42 @@
  * argument is a `String` with the title of the page, the second
  * argument is an `Html` object containing the body of the page.
  *@
-@main("Overview") {
+@main("Legal Information") {
 
-    <meta charset="utf-8">
+  
+
+
+	<title> New TODO </title>
+
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <div class="container">
+
+
+	<div class="container">
 		<center>	<h1> Legal Information </h1> </center>
-		<div class=" col-md-3"> <a href="index.html" class="btn-block btn-primary btn-lg active"> Overview </a></div>
-		<div class=" col-md-3"> <a href="newTodo.html" class="btn-block btn-primary btn-lg col-sm-3"> Create a new TODO </a></div>
+		<div class=" col-md-3"> <a href="index.html" class="btn-block btn-primary btn-lg"> Overview </a></div>
+		<div class=" col-md-3"> <a href="newTodo.html" class="btn-block btn-primary btn-lg col-sm-3 active"> Create a new TODO </a></div>
 		<div class=" col-md-3"> <a href="editTodo.html" class="btn-block btn-primary btn-lg col-sm-3"> Edit TODO </a></div>
 	  <div class=" col-md-3"> <a href="legalInformation.html" class="btn-block btn-primary btn-lg col-sm-3"> Legal Information</a></div>
 	</div>
+    <div class="container">
+   <p>Add a new Product</p>
+    <form action="@routes.HomeController.addTodo()" method="post">
+    <input type="text" name="description"/>
+        <input type="text" name="progress"/>
+         <input type="text" name="date"/>
+        
+        <button>Add product</button>
+    </form>
+	</div>
 
-<div class="container">
-  <h3> <i>Your TODOs</i></h3>
 
-  <table class="table table-striped">
-    <thead>
-      <tr>
-		<th>Content</th>
-        <th>Deadline</th>
-        <th>Progress</th>
-        <th>Edit/Delete</th>
 
-      </tr>
-    </thead>
-    <tbody id="products">
-     
-    </tbody>
-  </table>
-</div>
 
-<script  src="@routes.Assets.versioned("js/test.js")"></script>
 
-    <p>Product list:</p>
-    <ul id="products"></ul>
-    <p>End of product list.</p>
 
 }
