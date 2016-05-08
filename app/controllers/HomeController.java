@@ -51,14 +51,23 @@ public class HomeController extends Controller {
         Form<Todo> userForm = formFactory.form(Todo.class);
         Todo todo = userForm.bindFromRequest().get();
         todo.save();
-      //  return ok("Product: " + todo.description + todo.id + todo.date + todo.progress); // DEBUG
+   
     return redirect(routes.HomeController.index());
     }
     
-    public Result getProducts() {
+    public Result getTodos() {
         Model.Finder<Integer, Todo> finder = new Model.Finder<>(Todo.class);
         List<Todo> products = finder.all();
         return ok(toJson(products));
+    }
+    
+    public Result changeTodo(Long id) {
+        Form<Todo> userForm = formFactory.form(Todo.class);
+        Todo todo = userForm.bindFromRequest().get();
+        todo.update();
+   
+    return redirect(routes.HomeController.index());
+    
     }
 
 }

@@ -32,15 +32,18 @@
 	  <div class=" col-md-3"> <a href="legalInformation.html" class="btn-block btn-primary btn-lg col-sm-3"> Legal Information</a></div>
 	</div>
     <div class="container">
-   <p>Add a new Product</p>
+   <p>
     <form action="@routes.HomeController.addTodo()" method="post">
     <input type="text" name="description"/>
+    <input type="text" name="date"/>
         <input type="text" name="progress"/>
-         <input type="text" name="date"/>
+         
         
-        <button>Add product</button>
+        <button>Add TODO</button>
     </form>
+    </p>
 	</div>
+
 
 
 

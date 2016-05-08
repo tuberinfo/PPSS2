@@ -22,4 +22,6 @@ GET     /editTodo.html                         controllers.HomeController.editTo
 
 POST    /addTodo                                controllers.HomeController.addTodo
 
-GET     /products                               controllers.HomeController.getProducts    
+GET     /todos                               controllers.HomeController.getTodos    
+
+PUT  /changeTodo                             controllers.HomeController.changeTodo(id:Long)
