@@ -1,0 +1,7 @@
+New log file opened at Mon May 09 23:10:55 CEST 2016 by 25537@gereon-ThinkPad-X250
+Taking next connection to: 36499
+New client attempting to connect on port: 50880-36499
+  Address = /127.0.1.1:36499
+This client on port 50880 has uuid 2dbff05f-a192-4ac4-80a8-a45f6619b3c1 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-2dbff05f-a192-4ac4-80a8-a45f6619b3c1
+Taking next connection to: 36499

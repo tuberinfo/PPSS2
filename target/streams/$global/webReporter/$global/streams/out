@@ -1,0 +1,16 @@
+[0m[[31merror[0m] [0m/home/gereon/git/PPSS2/app/assets/js/fillEdit.js:18: Expected an identifier and instead saw ','.[0m
+[0m[[31merror[0m] [0m	$.ajax({url:"/changeTodo/" + product.id, type: "PUT", data: "description" + $("#descr-" + id) + "&date-" + $("#date-" + id) + "&progress" + $("#progr-" + id) +, success: location.reload()});[0m
+[0m[[31merror[0m] [0m	                                                                                                                                                                  ^[0m
+[0m[[31merror[0m] [0m/home/gereon/git/PPSS2/app/assets/js/fillEdit.js:18: Expected '}' to match '{' from line 18 and instead saw 'success'.[0m
+[0m[[31merror[0m] [0m	$.ajax({url:"/changeTodo/" + product.id, type: "PUT", data: "description" + $("#descr-" + id) + "&date-" + $("#date-" + id) + "&progress" + $("#progr-" + id) +, success: location.reload()});[0m
+[0m[[31merror[0m] [0m	                                                                                                                                                                    ^[0m
+[0m[[31merror[0m] [0m/home/gereon/git/PPSS2/app/assets/js/fillEdit.js:18: Expected ')' and instead saw ':'.[0m
+[0m[[31merror[0m] [0m	$.ajax({url:"/changeTodo/" + product.id, type: "PUT", data: "description" + $("#descr-" + id) + "&date-" + $("#date-" + id) + "&progress" + $("#progr-" + id) +, success: location.reload()});[0m
+[0m[[31merror[0m] [0m	                                                                                                                                                                           ^[0m
+[0m[[31merror[0m] [0m/home/gereon/git/PPSS2/app/assets/js/fillEdit.js:18: Missing semicolon.[0m
+[0m[[31merror[0m] [0m	$.ajax({url:"/changeTodo/" + product.id, type: "PUT", data: "description" + $("#descr-" + id) + "&date-" + $("#date-" + id) + "&progress" + $("#progr-" + id) +, success: location.reload()});[0m
+[0m[[31merror[0m] [0m	                                                                                                                                                                            ^[0m
+[0m[[31merror[0m] [0m/home/gereon/git/PPSS2/app/assets/js/fillEdit.js:18: Missing semicolon.[0m
+[0m[[31merror[0m] [0m	$.ajax({url:"/changeTodo/" + product.id, type: "PUT", data: "description" + $("#descr-" + id) + "&date-" + $("#date-" + id) + "&progress" + $("#progr-" + id) +, success: location.reload()});[0m
+[0m[[31merror[0m] [0m	                                                                                                                                                                                              ^[0m
+[0m[[31merror[0m] [0m7 errors found[0m

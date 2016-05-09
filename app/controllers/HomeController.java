@@ -69,5 +69,11 @@ public class HomeController extends Controller {
     return redirect(routes.HomeController.index());
     
     }
+    
+    public Result deleteTodo(Long id) {
+    	Todo.delete(id);
+    	
+    	return redirect(routes.HomeController.index());
+    }
 
 }
