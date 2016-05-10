@@ -1,5 +1,5 @@
-New log file opened at Tue May 10 17:21:05 CEST 2016 by 9346@gereon-ThinkPad-X250
-jvm 9346@gereon-ThinkPad-X250
+New log file opened at Tue May 10 21:10:53 CEST 2016 by 21572@gereon-ThinkPad-X250
+jvm 21572@gereon-ThinkPad-X250
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /home/gereon/.sbt/0.13/plugins, returning: (global-plugins)
 Loading global plugins from /home/gereon/.sbt/0.13/plugins
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@605a59cf, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@667c9b2f, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -62,7 +62,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbteclipse.plugin.EclipsePlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /home/gereon/git/PPSS2/project, returning: (ppss2-build)
 Loading project definition from /home/gereon/git/PPSS2/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@605a59cf, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@667c9b2f, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -104,7 +104,7 @@ Set current project to play-java (in build file:/home/gereon/git/PPSS2/)
 > server-handle-next-server-request
 > {file:/home/gereon/git/PPSS2/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@35370dcd, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@55b4adb4, check cycles: false
 Read from stdout: Updating {file:/home/gereon/git/PPSS2/}root...
 Updating {file:/home/gereon/git/PPSS2/}root...
 Other repositories:
@@ -119,7 +119,7 @@ resolving dependencies for configuration 'compile'
 == resolving dependencies play-java#play-java_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
 Read from stdout: Resolving org.scala-lang#scala-library;2.11.7 ...
 Resolving org.scala-lang#scala-library;2.11.7 ...
-sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e359fc7
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b152198
 sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
 	found org.scala-lang#scala-library;2.11.7 in sbt-chain
 	[2.11.7] org.scala-lang#scala-library;2.11.7
@@ -8852,7 +8852,7 @@ all callers are evicted for io.netty#netty-codec;4.0.34.Final: evicting too
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
 	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)
-:: resolution report :: resolve 7639ms :: artifacts dl 168ms
+:: resolution report :: resolve 9933ms :: artifacts dl 199ms
 	report for play-java#play-java_2.11;1.0-SNAPSHOT compile produced in /home/gereon/git/PPSS2/target/resolution-cache/reports/play-java-play-java_2.11-compile.xml
 	report for play-java#play-java_2.11;1.0-SNAPSHOT runtime produced in /home/gereon/git/PPSS2/target/resolution-cache/reports/play-java-play-java_2.11-runtime.xml
 	report for play-java#play-java_2.11;1.0-SNAPSHOT test produced in /home/gereon/git/PPSS2/target/resolution-cache/reports/play-java-play-java_2.11-test.xml
@@ -8867,27 +8867,27 @@ all callers are evicted for io.netty#netty-codec;4.0.34.Final: evicting too
 	report for play-java#play-java_2.11;1.0-SNAPSHOT pom produced in /home/gereon/git/PPSS2/target/resolution-cache/reports/play-java-play-java_2.11-pom.xml
 	report for play-java#play-java_2.11;1.0-SNAPSHOT scala-tool produced in /home/gereon/git/PPSS2/target/resolution-cache/reports/play-java-play-java_2.11-scala-tool.xml
 	report for play-java#play-java_2.11;1.0-SNAPSHOT fork-run produced in /home/gereon/git/PPSS2/target/resolution-cache/reports/play-java-play-java_2.11-fork-run.xml
-	resolve done (7639ms resolve - 168ms download)
+	resolve done (9933ms resolve - 199ms download)
 Read from stdout: Done updating.
 Done updating.
-Total time: 9 s, completed 10.05.2016 17:21:47
+Total time: 11 s, completed 10.05.2016 21:12:24
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@6efecfa7, check cycles: false
-Total time: 0 s, completed 10.05.2016 17:21:49
+Running task... Cancel: sbt.server.ServerTaskCancellation@476ad05e, check cycles: false
+Total time: 0 s, completed 10.05.2016 21:12:26
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/home/gereon/git/PPSS2/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@19891428, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@54264507, check cycles: false
 SLF4J: The following set of substitute loggers may have been accessed
 SLF4J: during the initialization phase. Logging calls during this
 SLF4J: phase were not honored. However, subsequent logging calls to these
 SLF4J: loggers will work as normally expected.
 SLF4J: See also http://www.slf4j.org/codes.html#substituteLogger
-SLF4J: org.webjars.CloseQuietly
+SLF4J: org.webjars.WebJarExtractor
 Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
 Read from stdout: JavaScript linting on 1 source(s)
 JavaScript linting on 1 source(s)
@@ -8914,12 +8914,20 @@ Copy resource mappings:
 	(/home/gereon/git/PPSS2/conf/logback.xml,/home/gereon/git/PPSS2/target/scala-2.11/classes/logback.xml)
 	(/home/gereon/git/PPSS2/conf/evolutions/default,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions/default)
 	(/home/gereon/git/PPSS2/conf/evolutions/default/1.sql,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions/default/1.sql)
-Total time: 5 s, completed 10.05.2016 17:22:04
+Read from stdout: /home/gereon/git/PPSS2/app/assets/js/fillEdit.js:8: Bad or unnecessary escaping.
+/home/gereon/git/PPSS2/app/assets/js/fillEdit.js:8: Bad or unnecessary escaping.
+Read from stdout: 						"<input type=\"text\" name=\"description\" value=\"" + product.description + "\" id=\"descr-" + product.id + "\ class=\"form-control input-group\"></input>" + 
+						"<input type=\"text\" name=\"description\" value=\"" + product.description + "\" id=\"descr-" + product.id + "\ class=\"form-control input-group\"></input>" + 
+Read from stdout: 						                                                                                                                                 ^
+						                                                                                                                                 ^
+Read from stdout: one error found
+one error found
+Total time: 6 s, completed 10.05.2016 21:12:46
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/home/gereon/git/PPSS2/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@7bf84458, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@63ca9822, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -8936,6 +8944,8 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
+Read from stdout: JavaScript linting on 1 source(s)
+JavaScript linting on 1 source(s)
 Copy resource mappings: 
 	(/home/gereon/git/PPSS2/conf/evolutions,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions)
 	(/home/gereon/git/PPSS2/conf/application.conf,/home/gereon/git/PPSS2/target/scala-2.11/classes/application.conf)
@@ -8943,7 +8953,46 @@ Copy resource mappings:
 	(/home/gereon/git/PPSS2/conf/logback.xml,/home/gereon/git/PPSS2/target/scala-2.11/classes/logback.xml)
 	(/home/gereon/git/PPSS2/conf/evolutions/default,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions/default)
 	(/home/gereon/git/PPSS2/conf/evolutions/default/1.sql,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions/default/1.sql)
-Total time: 2 s, completed 10.05.2016 17:22:13
+Read from stdout: /home/gereon/git/PPSS2/app/assets/js/fillEdit.js:8: Bad or unnecessary escaping.
+/home/gereon/git/PPSS2/app/assets/js/fillEdit.js:8: Bad or unnecessary escaping.
+Read from stdout: 						"<input type=\"text\" name=\"description\" value=\"" + product.description + "\" id=\"descr-" + product.id + "\ class=\"form-control input-group\"></input>" + 
+						"<input type=\"text\" name=\"description\" value=\"" + product.description + "\" id=\"descr-" + product.id + "\ class=\"form-control input-group\"></input>" + 
+Read from stdout: 						                                                                                                                                 ^
+						                                                                                                                                 ^
+Read from stdout: one error found
+one error found
+Total time: 3 s, completed 10.05.2016 21:12:49
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/home/gereon/git/PPSS2/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@30d796c7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Read from stdout: JavaScript linting on 1 source(s)
+JavaScript linting on 1 source(s)
+Copy resource mappings: 
+	(/home/gereon/git/PPSS2/conf/evolutions,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions)
+	(/home/gereon/git/PPSS2/conf/application.conf,/home/gereon/git/PPSS2/target/scala-2.11/classes/application.conf)
+	(/home/gereon/git/PPSS2/conf/routes,/home/gereon/git/PPSS2/target/scala-2.11/classes/routes)
+	(/home/gereon/git/PPSS2/conf/logback.xml,/home/gereon/git/PPSS2/target/scala-2.11/classes/logback.xml)
+	(/home/gereon/git/PPSS2/conf/evolutions/default,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions/default)
+	(/home/gereon/git/PPSS2/conf/evolutions/default/1.sql,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 2 s, completed 10.05.2016 21:14:29
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -8952,4 +9001,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 9346@gereon-ThinkPad-X250 logs at Tue May 10 17:24:37 CEST 2016, goodbye.
+Closing the 21572@gereon-ThinkPad-X250 logs at Tue May 10 21:15:12 CEST 2016, goodbye.
