@@ -1,3 +1,26 @@
-.classpath
-.project
+# general
+*~
+*.log
+tmp
+dump
+
+# Eclipse
+.settings
 .settings/
+.cache
+.project
+.classpath
+.scala_dependencies
+bin
+
+# SBT
+dist
+project/boot
+project/target
+project/plugins/target
+target
+.target
+
+# Play
+logs
+RUNNING_PID

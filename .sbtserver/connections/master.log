@@ -1,8 +1,25 @@
-New log file opened at Thu May 05 13:04:38 CEST 2016 by 17571@gereon-ThinkPad-X250
-Taking next connection to: 40645
+New log file opened at Tue May 10 17:24:43 CEST 2016 by 9654@gereon-ThinkPad-X250
+Taking next connection to: 42389
+New client attempting to connect on port: 51026-42389
+  Address = /127.0.1.1:42389
+This client on port 51026 has uuid 106e0fd3-dff3-4c62-9393-6f537c5ccf18 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-106e0fd3-dff3-4c62-9393-6f537c5ccf18
+Taking next connection to: 42389
 Checking to see if clients are empty...
-No non-daemon clients connected after 3 min. Shutting down.
-Server socket thread exiting.
-0 clients open, will close them...
-All client sockets have been closed.
-Closing the 17571@gereon-ThinkPad-X250 logs at Thu May 05 13:07:38 CEST 2016, goodbye.
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42389
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42389
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42389
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42389
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42389
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 42389

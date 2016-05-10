@@ -12,6 +12,18 @@ GET     /message                    controllers.AsyncController.message
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
-GET     /index.html                           controllers.HomeController.index
+GET     /index.html                    			controllers.HomeController.index
 
-GET     /legalInformation.html                controllers.HomeController.legalInformation
+GET     /legalInformation.html          		controllers.HomeController.legalInformation
+
+GET     /newTodo.html                    	    controllers.HomeController.newTodo
+
+GET     /editTodo.html                 			controllers.HomeController.editTodo 
+
+POST    /addTodo                                controllers.HomeController.addTodo
+
+GET     /todos                              	controllers.HomeController.getTodos    
+
+PUT  	/changeTodo/:id                        	controllers.HomeController.changeTodo(id:Long)
+
+DELETE	/deleteTodo/:id							controllers.HomeController.deleteTodo(id:Long)
