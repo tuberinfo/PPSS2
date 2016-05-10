@@ -1,5 +1,4 @@
-New log file opened at Tue May 10 10:37:40 CEST 2016 by 3715@gereon-ThinkPad-X250
-== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm;6.18.1->org.slf4j#slf4j-api;1.7.16 [runtime->compile]
+New log file opened at Tue May 10 10:42:47 CEST 2016 by 4297@gereon-ThinkPad-X250
 == resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm;6.18.1->com.fasterxml.jackson.core#jackson-core;2.5.3 [runtime->runtime(*)]
 == resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm;6.18.1->com.fasterxml.jackson.core#jackson-core;2.7.1 [runtime->runtime(*)]
 == resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm;6.18.1->com.fasterxml.jackson.core#jackson-core;2.7.1 [runtime->compile]
@@ -2973,7 +2972,7 @@ all callers are evicted for io.netty#netty-codec;4.0.34.Final: evicting too
 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar
 	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar
 	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)
-:: resolution report :: resolve 4357ms :: artifacts dl 130ms
+:: resolution report :: resolve 4194ms :: artifacts dl 165ms
 	report for play-java#play-java_2.11;1.0-SNAPSHOT compile produced in /home/gereon/git/PPSS2/target/resolution-cache/reports/play-java-play-java_2.11-compile.xml
 	report for play-java#play-java_2.11;1.0-SNAPSHOT runtime produced in /home/gereon/git/PPSS2/target/resolution-cache/reports/play-java-play-java_2.11-runtime.xml
 	report for play-java#play-java_2.11;1.0-SNAPSHOT test produced in /home/gereon/git/PPSS2/target/resolution-cache/reports/play-java-play-java_2.11-test.xml
@@ -2988,74 +2987,22 @@ all callers are evicted for io.netty#netty-codec;4.0.34.Final: evicting too
 	report for play-java#play-java_2.11;1.0-SNAPSHOT pom produced in /home/gereon/git/PPSS2/target/resolution-cache/reports/play-java-play-java_2.11-pom.xml
 	report for play-java#play-java_2.11;1.0-SNAPSHOT scala-tool produced in /home/gereon/git/PPSS2/target/resolution-cache/reports/play-java-play-java_2.11-scala-tool.xml
 	report for play-java#play-java_2.11;1.0-SNAPSHOT fork-run produced in /home/gereon/git/PPSS2/target/resolution-cache/reports/play-java-play-java_2.11-fork-run.xml
-	resolve done (4357ms resolve - 130ms download)
+	resolve done (4194ms resolve - 165ms download)
 Read from stdout: Done updating.
 Done updating.
-Total time: 5 s, completed 10.05.2016 10:37:41
+Total time: 5 s, completed 10.05.2016 10:42:49
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@77d91e16, check cycles: false
-Total time: 0 s, completed 10.05.2016 10:37:43
+Running task... Cancel: sbt.server.ServerTaskCancellation@30c44db7, check cycles: false
+Total time: 0 s, completed 10.05.2016 10:42:51
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/home/gereon/git/PPSS2/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@162e8a85, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
-Copy resource mappings: 
-	(/home/gereon/git/PPSS2/conf/evolutions,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions)
-	(/home/gereon/git/PPSS2/conf/application.conf,/home/gereon/git/PPSS2/target/scala-2.11/classes/application.conf)
-	(/home/gereon/git/PPSS2/conf/routes,/home/gereon/git/PPSS2/target/scala-2.11/classes/routes)
-	(/home/gereon/git/PPSS2/conf/logback.xml,/home/gereon/git/PPSS2/target/scala-2.11/classes/logback.xml)
-	(/home/gereon/git/PPSS2/conf/evolutions/default,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions/default)
-	(/home/gereon/git/PPSS2/conf/evolutions/default/1.sql,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions/default/1.sql)
-Total time: 2 s, completed 10.05.2016 10:37:52
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/home/gereon/git/PPSS2/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@5f3779e8, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/home/gereon/git/PPSS2/conf/evolutions,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions)
-	(/home/gereon/git/PPSS2/conf/application.conf,/home/gereon/git/PPSS2/target/scala-2.11/classes/application.conf)
-	(/home/gereon/git/PPSS2/conf/routes,/home/gereon/git/PPSS2/target/scala-2.11/classes/routes)
-	(/home/gereon/git/PPSS2/conf/logback.xml,/home/gereon/git/PPSS2/target/scala-2.11/classes/logback.xml)
-	(/home/gereon/git/PPSS2/conf/evolutions/default,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions/default)
-	(/home/gereon/git/PPSS2/conf/evolutions/default/1.sql,/home/gereon/git/PPSS2/target/scala-2.11/classes/evolutions/default/1.sql)
-Total time: 1 s, completed 10.05.2016 10:38:16
-> server-post-command-cleanup
-> server-handle-next-server-request
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 4297@gereon-ThinkPad-X250 logs at Tue May 10 10:45:20 CEST 2016, goodbye.

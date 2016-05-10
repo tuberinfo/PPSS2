@@ -1,7 +1,10 @@
-New log file opened at Tue May 10 10:42:17 CEST 2016 by 4297@gereon-ThinkPad-X250
-Taking next connection to: 34317
-New client attempting to connect on port: 60126-34317
-  Address = /127.0.1.1:34317
-This client on port 60126 has uuid 486dc3d8-8eba-4142-b75d-0e4218e0a29a configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-486dc3d8-8eba-4142-b75d-0e4218e0a29a
-Taking next connection to: 34317
+New log file opened at Tue May 10 10:45:26 CEST 2016 by 4535@gereon-ThinkPad-X250
+Taking next connection to: 39944
+New client attempting to connect on port: 38366-39944
+  Address = /127.0.1.1:39944
+This client on port 38366 has uuid b2ff2f44-a6e4-4ad0-9754-7eb7d078a5a0 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-b2ff2f44-a6e4-4ad0-9754-7eb7d078a5a0
+Taking next connection to: 39944
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 39944
