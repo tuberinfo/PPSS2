@@ -64,7 +64,17 @@ public class HomeController extends Controller {
     public Result changeTodo(Long id) {
         Form<Todo> userForm = formFactory.form(Todo.class);
         Todo todo = userForm.bindFromRequest().get();
-        todo.update();
+        
+        
+        Todo earl= Todo.findTodo(id);
+        earl.description= todo.description;
+        earl.date= todo.date;
+        earl.progress= todo.progress;
+        
+        System.out.println(todo.id);
+        earl.update();
+      // deleteTodo(todo.id);
+      // addTodo();
    
     return redirect(routes.HomeController.index());
     
@@ -72,6 +82,7 @@ public class HomeController extends Controller {
     
     public Result deleteTodo(Long id) {
     	Todo.delete(id);
+    	System.out.println("Test");
     	
     	return redirect(routes.HomeController.index());
     }

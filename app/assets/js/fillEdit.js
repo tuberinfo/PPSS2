@@ -6,7 +6,7 @@ $.get("/todos", function(todos) {
 										$("tr:last").last().append("<td>" + "<input type=\"text\" name=\"date\" value=\"" + product.date + "\" id=\"date-" + product.id + "\"></input>" + "</td>");
 										$("tr:last").last().append("<td>" + "<input type=\"text\" name=\"progress\" value=\"" + product.progress + "\" id=\"progr-" + product.id + "\"></input>" + "</td>");
 										$("tr:last").last().append("<td> " + " <button type=\"button\" class=\"btn btn-default\" onclick=\" doUpdate(" + product.id + ")\"> <span class=\"glyphicon glyphicon-pencil\" aria-hidden=\"true\"></span> </button>" + 
-												" <button type=\"button\" class=\"btn btn-default\"> <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> </button>" + "</td>");
+												" <button type=\"button\" class=\"btn btn-default\" onClick=\" $.ajax({url:'/deleteTodo/" + product.id + "', type: 'DELETE', success: location.reload()});\"> <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>  </button>" + "</td>");
 										$("tr:last").last().append(" </form>");
 
 									});

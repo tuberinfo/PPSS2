@@ -11,3 +11,30 @@ Taking next connection to: 39944
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
 Taking next connection to: 39944
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 39944
+New client attempting to connect on port: 38668-39944
+  Address = /127.0.1.1:39944
+Handshake exception on socket: 38668
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 39944
+New client attempting to connect on port: 38670-39944
+  Address = /127.0.1.1:39944
+This client on port 38670 has uuid 9cecba5c-ec81-4b59-94df-50393c8dee91 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-9cecba5c-ec81-4b59-94df-50393c8dee91
+Taking next connection to: 39944
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 4535@gereon-ThinkPad-X250 logs at Tue May 10 10:59:44 CEST 2016, goodbye.

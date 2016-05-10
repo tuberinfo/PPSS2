@@ -34,7 +34,13 @@ public class Todo extends Model {
 	}
 
 	public static void delete(long id) {
+	    
 		find.ref(id).delete();
+	}
+	
+	public static Todo findTodo(long id) {
+	    
+	    return find.ref(id);
 	}
 
 }
