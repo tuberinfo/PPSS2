@@ -1,9 +1,9 @@
-This is your new Play application
+This is our new Play application
 =================================
 
-This file will be packaged with your application when using `activator dist`.
-
-There are several demonstration files available in this template.
+Just start the Activator.bat ->
+start the Application over the Graphical Interface in your Browser or by command line ( use the run command ) ->
+lets go
 
 Controllers
 ===========
