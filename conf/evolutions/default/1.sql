@@ -6,7 +6,7 @@
 create table todo (
   id                            bigint not null,
   description                   varchar(255),
-  progress                      varchar(255),
+  progress                      integer,
   date                          varchar(255),
   constraint pk_todo primary key (id)
 );

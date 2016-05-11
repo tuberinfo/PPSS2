@@ -19,13 +19,13 @@ public class Todo extends Model {
 
 	public String description;
 
-	public String progress;
+	public int progress;
 
 	public String date;
 	
 	public static Finder<Long, Todo> find = new Finder(Long.class, Todo.class);
 
-	public Todo(String description, String progress, String date) {
+	public Todo(String description, int progress, String date) {
 		this.description = description;
 		this.progress = progress;
 		this.date = date;
