@@ -42,5 +42,10 @@ public class Todo extends Model {
 	    
 	    return find.ref(id);
 	}
+	
+	@Override
+	public String toString() {
+	    return "" + description +" " + progress +" " + date +" " + id;
+	}
 
 }

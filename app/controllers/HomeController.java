@@ -65,13 +65,14 @@ public class HomeController extends Controller {
         Form<Todo> userForm = formFactory.form(Todo.class);
         Todo todo = userForm.bindFromRequest().get();
         
+        System.out.println(todo);
         
         Todo earl= Todo.findTodo(id);
         earl.description= todo.description;
         earl.date= todo.date;
         earl.progress= todo.progress;
         
-        System.out.println(todo.id);
+        System.out.println(todo.date);
         earl.update();
       // deleteTodo(todo.id);
       // addTodo();

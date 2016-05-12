@@ -4,9 +4,9 @@ $.get("/todos", function(todos) {
 		$("tr:last").last().append("" +
 			"<td class=\"row\">" +
 				"<form action=\"@routes.HomeController.addTodo()\" method=\"post\">" +
-					"<div class=\"col-sm-4 col-xs-12\">" +
-						"<input type=\"text\" name=\"description\" value=\"" + product.description + "\" id=\"descr-" + product.id + " class=\"form-control input-group\" style=\"width:100%\"></input>" + 
-					"</div>" + 
+						"<div class=\"col-xs-4\">" +
+								"<input  name=\"descr\" value=\"" + product.description + "\" id=\"descr-" + product.id + "\" class=\"form-control input-group\"></input>" + 
+							"</div>" +
 					"<div class=\"col-sm-8 col-xs-12\">" +
 						"<div class=\"row\">" +
 							"<div class=\"col-xs-4\">" +
@@ -32,5 +32,6 @@ $.get("/todos", function(todos) {
 
 
 function doUpdate(id){
+   
 	$.ajax({url:"/changeTodo/" + id, type: "PUT", data: "description=" + $("#descr-" + id).val() + "&date=" + $("#date-" + id).val() + "&progress=" + $("#progr-" + id).val(), success: location.reload()});
 }
